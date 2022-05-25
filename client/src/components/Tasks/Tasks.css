@@ -1,0 +1,16 @@
+.TaskTitle,
+.addTaskBtn {
+  width: 10em;
+  height: 2.4em;
+  margin: 0.4em;
+  border-radius: 0.4em;
+  border: none;
+  background-color: #ddd;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.TaskTitle:hover,
+.addTaskBtn:hover {
+  border: 2px solid #000;
+}

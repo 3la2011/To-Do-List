@@ -1,0 +1,38 @@
+.LoadingPage {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0004;
+  z-index: 99;
+}
+
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  background-color: aqua;
+  width: 18rem;
+  aspect-ratio: 16/9;
+  border-radius: 0.4rem;
+  transform: translate(
+    calc(var(--loading-msg-container-width) / -2 + 100vw / 2),
+    20vh
+  );
+}
+
+.loadingImg {
+  width: 4rem;
+  animation: rotate 1.5s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

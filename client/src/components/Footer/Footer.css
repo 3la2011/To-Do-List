@@ -1,0 +1,25 @@
+.Footer {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #333;
+}
+
+.Footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: calc(100vw - 2em);
+}
+
+.Footer ul li {
+  padding: 1em;
+  color: #fff;
+}
+
+@media screen and (min-width: 769px) {
+  .Footer ul {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
