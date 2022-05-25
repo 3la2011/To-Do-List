@@ -1,0 +1,4 @@
+PORT=4200
+DATABASE_URL=
+TOKEN_KEY=
+NODE_ENV=development
