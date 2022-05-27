@@ -24,10 +24,11 @@ import { LoadingPage } from "./components/LoadingPage/LoadingPage";
 import { loading as loadingReducer, stopLoading } from "./redux/loadingReducer";
 import { login, logout } from "./redux/userReducer";
 import { setTasks } from "./redux/tasksReducer";
-import { axiosConfig } from "./functions/functions";
+import { axiosConfiguration } from "./functions/axiosConfig";
 
 function App() {
   // states variables and functions
+  const axiosConfig = axiosConfiguration();
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state);
   const { user } = useSelector((state) => state);

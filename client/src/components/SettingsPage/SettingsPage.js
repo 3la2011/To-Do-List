@@ -17,7 +17,7 @@ import { loading, stopLoading } from "../../redux/loadingReducer";
 import { notify } from "../../redux/notificationsReducer";
 
 // Functions
-import { axiosConfig, url } from "../../functions/axiosConfig";
+import { axiosConfiguration, url } from "../../functions/axiosConfiguration";
 // import { switchMode } from "../../functions/functions";
 
 export const SettingsPage = () => {
@@ -26,7 +26,7 @@ export const SettingsPage = () => {
 
   const ChangeMode = (data) => {
     dispatch(loading());
-    axiosConfig
+    axiosConfiguration
       .put(url + "/api/user/update/mode", data, {
         headers: { Authorization: "Bearer " + localStorage.getItem("token") },
       })

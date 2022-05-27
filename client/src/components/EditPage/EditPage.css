@@ -1,0 +1,71 @@
+.EditPage {
+  position: fixed;
+  width: 80vw;
+  height: 80vh;
+  right: 10vw;
+  top: 10vh;
+  z-index: 10;
+  background-color: var(--main-clr);
+  border: 1px solid black;
+  border-radius: 0.4rem;
+}
+
+.closeEdit {
+  width: 1rem;
+  height: 1rem;
+  background: #fff;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 1px black solid;
+  border-radius: 0 0.3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.4s;
+}
+
+.closeEdit:hover {
+  color: #fff;
+  background-color: red;
+}
+
+.textarea {
+  width: 60vw;
+  resize: none;
+  padding: 0.4rem 0 0;
+  text-align: center;
+  border-radius: 0.4rem;
+  background: #fff9;
+}
+
+#textareaTitle {
+  height: 6vh;
+  margin: 1rem;
+}
+
+#textareaDescription {
+  height: 60vh;
+}
+
+.editBtns button {
+  width: 3.4rem;
+  height: 1.6rem;
+  margin: 2vh 0.4rem 1vh;
+  border-radius: 0.4rem;
+  color: #fff;
+  transition: 0.4s;
+  opacity: 0.6;
+}
+
+.editBtns button:hover {
+  opacity: 1;
+}
+
+#save {
+  background-color: rgba(26, 173, 26, 0.664);
+}
+
+#delete {
+  background-color: rgba(182, 25, 25, 0.637);
+}

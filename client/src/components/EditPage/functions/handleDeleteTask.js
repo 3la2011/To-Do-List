@@ -1,12 +1,13 @@
-import { axiosConfiguration } from "../../../functions/axiosConfig";
 import { store } from "../../../redux/store";
 import { setTasks } from "../../../redux/tasksReducer";
+import { axiosConfiguration } from "../../../functions/axiosConfig";
 
-export const handleAddTask = () => {
+export const handleDeleteTask = (e) => {
+  const id = store.getState().tasks.selectedTaskId;
   const axiosConfig = axiosConfiguration();
-
+  console.log(id);
   axiosConfig
-    .get("/tasks/add")
+    .delete(`/tasks/delete/${id}`)
     .then((res) => {
       store.dispatch(setTasks(res.data.tasks));
     })

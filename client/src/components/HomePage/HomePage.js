@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 // Components
 import { Tasks } from "../Tasks/Tasks";
-import { EditPage } from "../EditPage.js/EditPage";
+import { EditPage } from "../EditPage/EditPage";
 
 export function HomePage() {
   const { isSelected } = useSelector((state) => state.tasks);

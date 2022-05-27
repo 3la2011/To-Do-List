@@ -5,9 +5,10 @@ import { store } from "../redux/store";
 import { loading, stopLoading } from "../redux/loadingReducer";
 import { login } from "../redux/userReducer";
 import { setTasks } from "../redux/tasksReducer";
-import { axiosConfig } from "./functions";
+import { axiosConfiguration } from "./axiosConfig";
 
 export const loginUser = async (data) => {
+  const axiosConfig = axiosConfiguration();
   store.dispatch(loading());
   if (data.username === "" || data.password === "") {
     store.dispatch(stopLoading());

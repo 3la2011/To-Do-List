@@ -5,10 +5,11 @@ import { store } from "../redux/store";
 import { loading, stopLoading } from "../redux/loadingReducer";
 import { login } from "../redux/userReducer";
 
-import { axiosConfig } from "./functions";
+import { axiosConfiguration } from "./axiosConfig";
 
 export const signup = async (data) => {
   store.dispatch(loading());
+  const axiosConfig = axiosConfiguration();
 
   if (
     data.username === "" ||

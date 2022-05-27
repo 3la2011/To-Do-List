@@ -1,6 +1,3 @@
-// Libraries and Packages
-import { Link } from "react-router-dom";
-
 // style
 import "./Navbar.css";
 
