@@ -1,12 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "todo list rest api",
+  "description": "api mern template for user sing in, up and out routes",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "deploy": "cd client && npm run build && cd .. && git add . && git commit -m 'initial commit' && git push heroku master"
   },
   "type": "module",
   "keywords": [],

@@ -1,6 +1,6 @@
 // Libraries and Packages
 import express from "express";
-import dotev from "dotenv/config";
+import dotenv from "dotenv/config";
 import mongoose from "mongoose";
 import cors from "cors";
 
